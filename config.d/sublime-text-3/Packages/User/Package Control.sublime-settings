@@ -1,0 +1,9 @@
+{
+	"installed_packages":
+	[
+		"Highlight",
+		"Python Auto-Complete",
+		"SublimePythonIDE",
+		"SublimeREPL"
+	]
+}
