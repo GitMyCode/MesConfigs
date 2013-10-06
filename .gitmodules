@@ -13,3 +13,6 @@
 [submodule "vim/bundle/python-mode"]
 	path = vim/bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule "sublime-text-3/Packages/SublimeCodeIntel"]
+	path = sublime-text-3/Packages/SublimeCodeIntel
+	url = https://github.com/SublimeCodeIntel/SublimeCodeIntel.git
