@@ -1,0 +1,17 @@
+#! /bin/bash
+# script to turn the screen blue
+echo It is a blue day
+
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+ln -siv "${DIR}""/.vimrc"  "$HOME"/.vimrc
+ln -siv "${DIR}""/vim"  "$HOME"/.vim
+
+git submodule init
+git submodule update
+
+for D in "${DIR}""/vim/bundle/"* ; do
+    if [ -d "${D}" ]; then
+      echo  "${D}"
+
+    fi
+done
