@@ -2,16 +2,46 @@
 #Script pour initialier les liens et les submodules
 
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+# find  -L "$HOME"/  -samefile "${DIR}"/.vimrc -exec ls -li {} \;
+# find  "$HOME"/ -links +1 -samefile "${DIR}"/vim -exec ls -li {} \;
+
+if [ -L "$HOME"/.vim ]; then
+    echo 'remove : ' "$HOME"/.vim
+    rm "$HOME"/.vim
+fi
+if [ -L "$HOME"/.vimrc ]; then
+    echo 'remove : ' "$HOME"/.vimrc
+    rm "$HOME"/.vimrc
+fi
+if [ -L "$HOME"/.config/sublime-text-3/Packages ]; then
+    echo 'remove : ' "$HOME"/.config/sublime-text-3/Packages
+    rm "$HOME"/.config/sublime-text-3/Packages
+fi
 ln -siv "${DIR}""/.vimrc"  "$HOME"/.vimrc
 ln -siv "${DIR}""/vim"  "$HOME"/.vim
 ln -siv "${DIR}""/sublime-text-3/Packages"  "$HOME"/.config/sublime-text-3/Packages
 
-git submodule init
-git submodule update
 
-for D in "${DIR}""/vim/bundle/"* ; do
-    if [ -d "${D}" ]; then
-      echo  "${D}"
+# find "/home" -type f -links +1  -printf "%i %p\n"  | sort | while IFS="${DIR}"/vim read a
+# do
+#     # $a == currently checked line
+#     echo $a
+#     inode=`echo $a | cut -d' ' -f1`
+#     path=`echo $a | cut -d' ' -f2`
+# done
 
-    fi
-done
+# find "$HOME"/ -xdev -samefile $HOME/.vimrc  -print0 | xargs -0 rm
+# find "$HOME"/ -xdev -samefile $HOME/.vim    -print0 | xargs -0 rm
+
+# git submodule init
+# git submodule update
+
+
+
+# for D in "${DIR}""/vim/bundle/"* ; do
+#     if [ -d "${D}" ]; then
+#       echo  "${D}"
+
+#     fi
+# done
