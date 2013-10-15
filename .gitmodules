@@ -16,3 +16,6 @@
 [submodule "sublime-text-3/Packages/SublimeCodeIntel"]
 	path = sublime-text-3/Packages/SublimeCodeIntel
 	url = https://github.com/SublimeCodeIntel/SublimeCodeIntel.git
+[submodule "sublime-text-3/Packages/LiveReload"]
+	path = sublime-text-3/Packages/LiveReload
+	url = https://github.com/dz0ny/LiveReload-sublimetext2.git

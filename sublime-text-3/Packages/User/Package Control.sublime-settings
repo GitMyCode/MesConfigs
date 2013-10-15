@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Emmet",
 		"Highlight",
 		"Python Auto-Complete",
 		"SublimePythonIDE",
