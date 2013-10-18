@@ -1,1 +1,1 @@
-{"description": "ST3 only: A rewrite of SublimeRope for ST3, uses the Rope library to add python completions and refactoring to ST3", "url": "https://github.com/JulianEberius/SublimePythonIDE", "version": "2013.09.11.11.24.40"}
+{"version": "2013.10.15.18.18.13", "url": "https://github.com/JulianEberius/SublimePythonIDE", "description": "ST3 only: A rewrite of SublimeRope for ST3, uses the Rope library to add python completions and refactoring to ST3"}
