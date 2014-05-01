@@ -14,10 +14,14 @@
 	],
 	"font_size": 8,
 	"highlight_modified_tabs": true,
+
+
 	"ignored_packages":
 	[
 		/*"Vintage"*/
 	],
+	"vintage_ctrl_keys": true, // pour le Ctrl avec vim
+
 	"indent_guide_options":
 	[
 		"draw_active",
@@ -35,5 +39,24 @@
 	"soda_folder_icons": false,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"wrap_width": 80
+	"wrap_width": 80,
+
+
+	 //
+    // Application Behavior Settings
+    //
+
+    // Exiting the application with hot_exit enabled will cause it to close
+    // immediately without prompting. Unsaved modifications and open files will
+    // be preserved and restored when next starting.
+    //
+    // Closing a window with an associated project will also close the window
+    // without prompting, preserving unsaved changes in the workspace file
+    // alongside the project.
+	"hot_exit": false,
+
+    // remember_open_files makes the application start up with the last set of
+    // open files. Changing this to false will have no effect if hot_exit is
+    // true
+    "remember_open_files": true,
 }
