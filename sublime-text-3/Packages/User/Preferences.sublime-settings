@@ -58,5 +58,5 @@
     // remember_open_files makes the application start up with the last set of
     // open files. Changing this to false will have no effect if hot_exit is
     // true
-    "remember_open_files": true,
+    "remember_open_files": false,
 }
