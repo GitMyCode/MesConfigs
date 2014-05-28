@@ -9,11 +9,12 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'bling/vim-airline'
 " The bundles you install will be listed here
 
 filetype plugin indent on
