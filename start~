@@ -21,7 +21,7 @@ fi
 ln -siv "${DIR}""/.vimrc"  "$HOME"/.vimrc
 ln -siv "${DIR}""/vim"  "$HOME"/.vim
 ln -siv "${DIR}""/sublime-text-3/Packages"  "$HOME""/.config/sublime-text-3/"
-
+git clone --recursive "${DIR}""/sublime-text-3/Packages/"
 git submodule update --recursive
 git submodule foreach git pull origin master
 #git submodule update --init --recursive ln "${DIR}""/sublime-text-3/Packages/"
