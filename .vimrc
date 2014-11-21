@@ -1,3 +1,4 @@
+set nocompatible
 colorscheme distinguished
 set number
 set nocompatible
@@ -100,6 +101,25 @@ if has ('gui_running')
     highlight Pmenu guibg=#cccccc gui=bold
 endif
 
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
 
 
+"let &t_SI .= "\<Esc>[4 q"
+"let &t_EI .= "\<Esc>[2 q"
+
+"upon hitting escape to change modes,
+ " send successive move-left and move-right
+ " " commands to immediately redraw the cursor
+autocmd GuiEnter * set background&
+
+set ttimeoutlen=100
+set ttyfast
+set lazyredraw
+
+
+ " " don't blink the cursor
+set guicursor+=i:blinkwait0
+
+" fix le bug avec les arrows key en insert mode
 
